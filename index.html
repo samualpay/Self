@@ -6,7 +6,7 @@
 <p>Welcome to Samual web site</p>
 <a href="tab1.html">go to tab1</a><br/>
 <img src="image/persion.png" alt="pig">
-<div ng-repeat="x in languages"></div>
+<div ng-repeat="x in languages">{{x}}</div>
 <script type="text/javascript">
 var app = angular.module('app', []);
 app.controller('myController', function ($scope, $http) {
