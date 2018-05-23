@@ -15,7 +15,7 @@ app.controller('myController', function ($scope, $http) {
 		method: 'get',
 		url: 'data/skill.json'
 	}).then(function(response){
-		$scope.language=response.data;
+		$scope.language=response.data.codingLanguage;
 	},function(response){
 	
 	})
