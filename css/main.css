@@ -1,0 +1,278 @@
+body {
+    overflow-y: hidden !important;
+    font-family: "Helvetica Neue", Helvetica, Arial, 'LiHei Pro', 'Microsoft JhengHei Black', sans-serif;
+    font-size: 15px;
+    padding-top: 50px;
+}
+
+.rms-navbar {
+    background-color: #F5A160;
+    border-color: #F5A160;
+}
+
+div.navbar-header a.navbar-brand:hover,
+ul.nav.navbar-nav > li > a:hover,
+ul.nav.navbar-nav > li > a:focus,
+ul.nav.navbar-nav > li.dropdown.open > a,
+.navbar-toggle:hover {
+    background-color: #DF8D5E;
+}
+
+.navbar-toggle {
+    border-color: #FFFFFF;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: #FFFFFF;
+}
+
+div.navbar-header a.navbar-brand,
+ul.nav.navbar-nav > li > a {
+    color: #FFFFFF;
+}
+
+.rms-view {
+    padding-top: 20px;
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+}
+
+.rms-style {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+h1[field=title] {
+    color: #2C3985;
+}
+
+button.btn.btn-default,
+button.btn.btn-default:hover,
+input[type='button'].btn.btn-default,
+input[type='button'].btn.btn-default:hover,
+input[type='submit'].btn.btn-default,
+input[type='submit'].btn.btn-default:hover {
+    background-color: #1971EB;
+    color: #EEE;
+    width: 70px;
+}
+
+button.btn.btn-default:active,
+input[type='button'].btn.btn-default:active,
+input[type='submit'].btn.btn-default:active {
+    background-color: #0848AA;
+    color: #EEE;
+}
+
+.form-signin {
+    width: 380px;
+    height: 300px;
+    margin: 0px auto;
+    position: relative;
+    top: 10px;
+}
+
+.signin-input {
+    margin-top: 30px;
+    padding: 0 30px 0 30px
+}
+
+.signin-input input {
+    height: 45px;
+    font-size: 18px;
+}
+
+.signin-input #userId {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.signin-input #password {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.rms-table {
+    border: 1px solid #878787;
+}
+
+.rms-table tr:nth-child(even) {
+    background: #EFEFEF;
+}
+
+.rms-table > thead > tr > th {
+    border: 1px solid #878787;
+    padding: 8px 0 8px 0;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #D4EAFF;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.rms-table > tbody > tr > td {
+    border: 1px solid #878787;
+    padding: 8px 0 8px 0;
+    text-align: center;
+    font-size: 14px;
+    line-height: 33px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 200px;
+}
+
+hr[thline] {
+    margin: 8px 0 8px 0;
+    border-top: 1px solid #878787;
+}
+
+.rms-modal-title {
+    color: #2C3985;
+    padding-left: 9px;
+    font-weight: bold;
+}
+
+.model-form-label {
+    font-size: 14px;
+    line-height: 34px;
+    padding-right: 0px;
+    text-indent: 10px;
+}
+
+.rms-modal-foot {
+    position: relative;
+    height: 60px;
+}
+
+.modal-btn-group {
+    position: absolute;
+    right: 63px;
+}
+
+.right-button {
+    float: right;
+}
+
+a[onclick],
+div[onclick],
+input[type="checkbox"] {
+    cursor: pointer;
+}
+
+input[readonly].pre-view,
+textarea[readonly].pre-view {
+    background-color: white;
+}
+
+.rms-block {
+    position: relative;
+    border: 1px solid #B8B8B8;
+    border-radius: 10px;
+    padding: 35px 10px 35px 10px;
+
+}
+
+.rms-block .block-title {
+    position: absolute;
+    border: 1px solid #B8B8B8;
+    border-radius: 10px;
+    background-color: white;
+    z-index: 2;
+    padding: 6px;
+    font-size: 20px;
+    top: -24px;
+    left: 74px;
+}
+
+.td-preview {
+    text-decoration: none;
+    cursor: pointer;
+    color: #0000EE;
+}
+
+.td-preview:hover {
+    text-decoration: underline;
+}
+
+.popover-content {
+    word-wrap: break-word;
+}
+
+.row-padding {
+    padding: 15px 0 15px;
+}
+
+div.radio {
+    position: relative;
+}
+
+div.radio > input[type="radio"] {
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    width: 25px;
+    height: 25px;
+}
+
+div.radio > label {
+    position: absolute;
+    left: 20px;
+}
+
+table[card-Detail] > thead > tr > th > div {
+    font-size: 14px;
+}
+
+.label-padding {
+    padding: 15px 0 0 5px;
+}
+
+.btn-100 {
+    width: 100px;
+}
+
+fieldset {
+    position: relative;
+}
+
+div.loadMask {
+    position: absolute;
+    top: 0px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1100;
+    background-color: transparent;
+    -moz-opacity: .7;
+    opacity: .7;
+}
+
+.loadMask img {
+    background-color: transparent;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+}
+
+.two-data div {
+    height: 33px;
+}
+
+.rmsDataList {
+    position: relative;
+}
+
+.rmsDataList .inner-btn {
+    position:absolute;
+    padding:5px;
+    right:0;
+}
+
+ul[datalist].dropdown-menu {
+    overflow-y: scroll;
+    max-height: 250px;
+}
