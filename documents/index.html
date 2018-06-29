@@ -1,0 +1,23 @@
+<html>
+<head>
+ <script type="text/javascript" src="../js/angular.min.js"></script>
+</head>
+<body ng-app="app" ng-controller="myController">
+<p>Welcome to Samual web site</p>
+<script type="text/javascript">
+var app = angular.module('app', []);
+app.controller('myController', function ($scope, $http) {
+	$scope.languages=[];
+	$http({
+		method: 'get',
+		url: 'fileList.json'
+	}).then(function(response){
+		//$scope.languages=response.data.codingLanguage;
+		console.log(response);
+	},function(response){
+	
+	})
+});
+</script>
+</body>
+</html>
