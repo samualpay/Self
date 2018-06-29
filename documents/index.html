@@ -1,22 +1,28 @@
 <html>
 <head>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
  <script type="text/javascript" src="../js/angular.min.js"></script>
 </head>
 <body ng-app="app" ng-controller="myController">
 <p>Welcome to Samual web site</p>
+<div id="content"></div>
 <script type="text/javascript">
 var app = angular.module('app', []);
 app.controller('myController', function ($scope, $http) {
-	$scope.languages=[];
+	$scope.list=[];
 	$http({
 		method: 'get',
 		url: 'fileList.json'
 	}).then(function(response){
 		//$scope.languages=response.data.codingLanguage;
 		console.log(response);
+		$scope.list=response.data.fileList;
 	},function(response){
 	
 	})
+});
+$(document).ready(function(){
+	$('#content').load("SVN");
 });
 </script>
 </body>
