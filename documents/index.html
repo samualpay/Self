@@ -2,6 +2,7 @@
 <head>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
  <script type="text/javascript" src="../js/angular.min.js"></script>
+ <script type="text/javascript" src="../js/showdown.min.js"></script>
 </head>
 <body ng-app="app" ng-controller="myController">
 <p>Welcome to Samual web site</p>
@@ -20,9 +21,22 @@ app.controller('myController', function ($scope, $http) {
 	},function(response){
 	
 	})
+	$http({
+		method: 'get',
+		url: 'SVN/index.md'
+	}).then(function(response){
+		//$scope.languages=response.data.codingLanguage;
+		console.log(response);
+		//$scope.list=response.data.fileList;
+	},function(response){
+	
+	})
 });
 $(document).ready(function(){
-	$('#content').load("SVN");
+	var converter = new showdown.Converter(),
+    var text = '# hello, markdown!',
+    var html = converter.makeHtml(text);
+	$('#content').innerHTML=html;
 });
 </script>
 </body>
