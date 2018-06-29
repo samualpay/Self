@@ -27,16 +27,13 @@ app.controller('myController', function ($scope, $http) {
 	}).then(function(response){
 		//$scope.languages=response.data.codingLanguage;
 		console.log(response);
+		var converter = new showdown.Converter();
+		var html = converter.makeHtml(response.data);
+		$('#content').html(html);
 		//$scope.list=response.data.fileList;
 	},function(response){
 	
 	})
-});
-$(document).ready(function(){
-	var converter = new showdown.Converter(),
-    var text = '# hello, markdown!',
-    var html = converter.makeHtml(text);
-	$('#content').innerHTML=html;
 });
 </script>
 </body>
