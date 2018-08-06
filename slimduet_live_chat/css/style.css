@@ -1,0 +1,138 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #00A1CC; }
+
+.container {
+  width: 30%;
+  margin: 2em auto;
+  padding: 2em 0 0; }
+  .container h1 {
+    font-weight: 300;
+    font-size: 3em;
+    text-align: center;
+    color: #FFFFFF; }
+  .container h2 {
+    font-weight: 300;
+    font-size: 2em;
+    text-align: center;
+    color: #212121;
+    margin: 0em 0 1em; }
+
+#signinForm {
+  width: 80%;
+  height: 50%;
+  margin: 0 auto;
+  -webkit-transition: 0.8s;
+  -o-transition: 0.8s;
+  transition: 0.8s;
+  background: #FFFFFF;
+  padding: 2em;
+  border-radius: 5px; }
+
+.form-group {
+  margin: 0 0 1em 0;
+  color: #737373;
+  font-size: .9em;
+  width: 100%; }
+
+.form-label {
+  color: #FF0000;
+  display: inline-block;
+  width: 4%; }
+
+.form-style {
+  outline: none;
+  font-size: .9em;
+  color: #737373;
+  padding: 1em;
+  width: 84%;
+  border: solid 1px #e2eaef;
+  border-radius: 5px; }
+  .form-style::-webkit-input-placeholder {
+    color: #CCCCCC; }
+  .form-style:-ms-input-placeholder {
+    color: #CCCCCC; }
+  .form-style::-ms-input-placeholder {
+    color: #CCCCCC; }
+  .form-style::placeholder {
+    color: #CCCCCC; }
+
+.form-radio {
+  margin: 0px 3px 0px 5px; }
+
+.error-message {
+  display: block;
+  color: #FF0000;
+  margin: .3em 0 0 1.5em; }
+
+.form-submit {
+  font-size: 1em;
+  color: #FFFFFF;
+  background: #00A1CC;
+  border: 3px solid #00A1CC;
+  outline: none;
+  cursor: pointer;
+  margin-top: 2em;
+  padding: .6em 1em;
+  width: 100%;
+  border-radius: 5px;
+  -webkit-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  transition: 0.5s all; }
+
+.form-submit:hover {
+  background: #009FFB;
+  border: 3px solid #009FFB; }
+
+.form-submit:disabled {
+  background: #999999;
+  border: 3px solid #999999;
+  color: #FFFFFF; }
+
+.copyright {
+  text-align: center;
+  margin: 2em 0 0;
+  font-size: .9em;
+  color: #FFFFFF; }
+
+/* Responsive Web Design */
+@media (max-width: 1440px) {
+  .container {
+    width: 33%; } }
+
+@media (max-width: 1024px) {
+  .container {
+    width: 47%; } }
+
+@media (max-width: 768px) {
+  .container {
+    width: 60%;
+    margin: 1em auto; }
+    .container h1 {
+      font-size: 2.5em; } }
+
+@media (max-width: 600px) {
+  .container {
+    padding: 0;
+    width: 80%; }
+    .container h1 {
+      font-size: 2.2em; }
+  .form-style {
+    font-size: 0.85em;
+    width: 80%; } }
+
+@media (max-width: 320px) {
+  .container {
+    width: 90%;
+    height: 470px; }
+    .container h1 {
+      font-size: 1.6em; }
+    .container h2 {
+      font-size: 1.4em; }
+  #signinForm {
+    padding: 0.7em 1.5em;
+    height: 63%; }
+  .copyright {
+    margin: 2em 0; } }
+
+/*# sourceMappingURL=style.css.map */

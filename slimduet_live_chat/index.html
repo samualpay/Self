@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title key="liveChatService">Live Chat Service</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100,300" rel="stylesheet">
+		<link rel="stylesheet" href="./css/vendors.css">
+		<link rel="stylesheet" href="./css/style.css">
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.5.1/qs.js"></script>
+		<script src="./js/vendors.js"></script>
+		<script src="./js/script.js"></script>
+		<script type="text/javascript" src="https://www.itaojin.cn/static/scripts/modules/workbench/TJ_IM.js" data-token="fbaa78b7d0bb40f8865d04fdd1ec7431" data-applocation="https://www.itaojin.cn" id="TJ_IMScript"></script>
+	</head>
+
+	<body>
+		<div class="container">
+			<h1 key="liveChatService">Live Chat Service</h1>
+
+			<div id="signinForm">
+				<h2 key="basicInfo">Basic Info.</h2>
+
+				<div class="form-group">
+					<label for="name" class="form-label">*</label>
+					<input type="text" class="form-style" name="name" id="name" maxlength="50" placeholder="Name">
+				</div>
+
+				<div class="form-group">
+					<label class="form-label">*</label>
+					<input type="radio" class="form-radio" name="gender" value="male"><span key="male">male</span>
+					<input type="radio" class="form-radio" name="gender" value="female"><span key="female">female</span>
+				</div>
+
+				<div class="form-group">
+					<label for="email" class="form-label"></label>
+					<input type="email" class="form-style" name="email" id="email" maxlength="100" placeholder="name@sample.com">
+					<span id="emailError" class="error-message" key="emailError">email format error</span>
+				</div>
+
+				<button type="submit" class="form-submit" id="connect" data-tjimtag-customize="true" key="connect">connect</button>
+			</div>
+
+			<p class="copyright">© Taisys Holding Co. Ltd. All rights reserved.</p>
+		</div>
+	</body>
+</html>

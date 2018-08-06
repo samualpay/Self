@@ -1,0 +1,10 @@
+{
+    "liveChatService": "Live Chat Service",
+    "token": "fbaa78b7d0bb40f8865d04fdd1ec7431",
+    "basicInfo": "Basic Info.",
+    "name": "Name",
+    "male": "male",
+    "female": "female",
+    "emailError": "email format error",
+    "connect": "connect"
+}

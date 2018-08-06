@@ -1,0 +1,10 @@
+{
+    "liveChatService": "在线客服",
+    "token": "2586a3ed509a4e56a46b10f14b2e0303",
+    "basicInfo": "基本信息",
+    "name": "姓名",
+    "male": "男性",
+    "female": "女性",
+    "emailError": "email 格式不正确",
+    "connect": "连线客服"
+}
